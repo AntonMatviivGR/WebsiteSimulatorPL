@@ -1,0 +1,48 @@
+.secondary-parameters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 8px;
+    margin-bottom: 32px;
+    margin-top: 128px;
+    background-color: rgb(16, 16, 16);
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.particle-amount, .particle-size, .particle-acceleration, .particle-color {
+    background-color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 4px;
+    padding-bottom: 16px;
+    border-radius: 16px;
+}
+
+.particle-block {
+    display: block;
+    text-align: center;
+}
+
+.particle-block p {
+    display: inline-block;
+    padding-right: 8px;
+    margin: 4px 0;
+    font-weight: 600;
+    width: 32px;
+}
+
+.particle-block p, input {
+    vertical-align: top;
+}
+
+.particle-block input[type="text"] {
+    width: 32px;
+}
+
+.particle-block input[type="range"] {
+    width: 100px;
+}
+
+.particle-block input[type="color"] {
+    width: 120px;
+    height: 24px;
+}

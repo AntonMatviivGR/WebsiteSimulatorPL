@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Particle Life</title>
+    <link rel="stylesheet" href="CSS/buttons.css">
+    <link rel="stylesheet" href="CSS/block.css">
+    <link rel="stylesheet" href="CSS/particle.css">
+    <link rel="stylesheet" href="CSS/save.css">
+    <link rel="stylesheet" href="CSS/secondary-parameters.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="interface">
+        <div>
+            <button id="saveButton"><img class="save-icon" src="Icons/Save.png"></button>
+            <button id="langButton">ENG</button>
+            <button id="restartButton"><img class="restart-icon" src="Icons/Restart.png"></button>
+            <button id="pauseButton"><img class="pause-icon" src="Icons/Pause.png"></button>
+
+            <div class="secondary-parameters">
+
+                <div class="particle-amount">
+                <h2 id="amountLabel">Amount</h2>
+                <div class="amount-container">
+                </div>
+                </div>
+
+                <div class="particle-size">
+                <h2 id="sizeLabel">Size</h2>
+                <div class="size-container">
+                </div>
+                </div>
+
+                <div class="particle-acceleration">
+                <h2 id="accelerationLabel">Acceleration</h2>
+                <div class="acceleration-container">
+                </div>
+                </div>
+
+                <div class="particle-color">
+                <h2 id="colorLabel">Color</h2>
+                <div class="color-container">
+                </div>
+                </div>
+
+
+            </div>
+
+            <div class="main-parameters">
+
+                <div class="attraction-force">
+                <h2 id="attractionForceLabel">Particle Attraction Force</h2>
+                <div class="parameter-grid"></div>
+                </div>
+
+                <div class="attraction-distance">
+                <h2 id="attractionDistanceLabel">Particle Attraction Distance</h2>
+                <div class="parameter-grid"></div>
+                </div>
+
+                <div class="repulsion-force">
+                <h2 id="repulsionForceLabel">Particle Repulsion Force</h2>
+                <div class="parameter-grid"></div>
+                </div>
+
+                <div class="repulsion-distance">
+                <h2 id="repulsionDistanceLabel">Particle Repulsion Distance</h2>
+                <div class="parameter-grid"></div>
+                </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <div class="saveboard">
+    <h1 id="localSavesLabel">Local Saves</h1>
+    <input class="search" placeholder="Search">
+    <div class="save-template">
+        <input class="text slot-input" placeholder="Save Name">
+        <div class="slot-buttons">
+        <button class="btn-save" id="saveBtn"><img class="save-icon-2" src="Icons/Save.png"></button>
+        </div>
+    </div>
+    <div class="slots"></div>
+    </div>
+
+    <div class="block">
+        <h1>PARTICLE LIFE AUTHENTICATION</h1>
+        <div class="controls">
+            <input class="text password-input" type="password" placeholder="Password" />
+            <button class="btn-password" id="PassBtn">Enter</button>
+        </div>
+    </div>
+
+    <script src="JS/Script.js"></script>
+    <script src="JS/Dynamic.js"></script>
+    <script src="JS/Parameters.js"></script>
+    <script src="JS/Physic.js"></script>
+    <script src="JS/Animation.js"></script>
+    <script src="JS/Initialize.js"></script>
+    <script src="JS/Buttons.js"></script>
+    <script src="JS/GetElementById.js"></script>
+    <script src="JS/Saves.js"></script>
+    <script src="JS/Main.js"></script>
+    <script src="JS/Block.js"></script>
+
+
+</body>
+
+</html>

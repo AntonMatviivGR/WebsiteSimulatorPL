@@ -1,0 +1,73 @@
+.saveboard {
+    position: absolute;
+    right: 0%;
+    display: none;
+    width: 250px;
+    max-width: 250px;
+    max-height: 100%;
+    overflow: auto;
+    
+}
+
+.saveboard .slot-name {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.saveboard h1 {
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.save-template {
+    margin-bottom: 16px;
+    display: flex;
+    transition: back;
+}
+
+.save {
+    padding: 8px;
+    padding-bottom: 16px;
+    background-color: rgb(50, 50, 50, 0);
+    transition: background-color 0.75s;
+}
+
+.save:hover {
+    background-color: rgb(50, 50, 50, 1);
+}
+
+.slot-name {
+    margin: 0 0 16px 0;
+    font-size: 20px;
+}
+
+.save-template p {
+    display: inline-block;
+}
+
+.save-template button {
+    margin-top: 10px;
+}
+
+.save-template input {
+    width: 100px;
+    height: 17px;
+    margin: 20px 10px 10px 10px;
+    padding: 4px 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 50, 50);
+    border: none;
+    border-radius: 30px;
+}
+
+.search {
+    width: 180px;
+    height: 20px;
+    margin-left: 10px;
+    margin-bottom: 32px;
+    padding: 8px 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 50, 50);
+    border: none;
+    border-radius: 30px;
+}

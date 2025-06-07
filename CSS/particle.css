@@ -1,0 +1,93 @@
+body {
+    display: grid;
+    grid-template-columns: 49.5% 50.5%;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+}
+
+.interface {
+    background-color: rgb(20, 20, 20);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.main-parameters h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    margin-left: 10%;
+}
+
+.main-parameters {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 32px;
+    background-color: rgb(16, 16, 16);
+    text-align: center;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.parameter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1f 1fr 1f 1fr 1f 1fr 1f 1fr 1f 1fr 1f 1fr 1f;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1f 1fr 1f 1fr 1f 1fr 1f 1fr 1f 1fr 1f 1fr 1f;
+    gap: 4px;
+    background-color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.parameter-grid p {
+    justify-self: center;
+    align-self: center;
+    font-weight: 600;
+}
+
+.parameter-grid input[type="text"] {
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 30px;
+    margin-bottom: 8px;
+}
+
+.parameter-grid input[type="range"] {
+    display: block;
+    margin: auto;
+    width: 60px;
+}
+
+input[type="text"] {
+    border: none;
+    border-radius: 100px;
+    padding: 2px 8px;
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+}
+
+:root {
+    --color1: #fafafa;
+    --color2: #fafa00;
+    --color3: #fa00fa;
+    --color4: #00fafa;
+}
+
+#canvas {
+    position: fixed;
+    margin-left: 49.5%;
+    grid-column: 2;
+    background-color: rgb(0, 0, 0);
+}
