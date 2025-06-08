@@ -54,7 +54,7 @@
 #restartButton {
     display: flex;
     top: 30px;
-    left: 770px;
+    left: 470px;
     width: 64px;
     height: 64px;
 }
@@ -80,7 +80,7 @@
     color: black;
     display: flex;
     top: 30px;
-    left: 850px;
+    left: 550px;
     width: 64px;
     height: 64px;
 }
