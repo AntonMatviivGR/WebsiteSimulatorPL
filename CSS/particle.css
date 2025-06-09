@@ -78,16 +78,159 @@ input[type="text"] {
     color: rgb(255, 255, 255);
 }
 
-:root {
-    --color1: #fafafa;
-    --color2: #fafa00;
-    --color3: #fa00fa;
-    --color4: #00fafa;
-}
-
 #canvas {
     position: fixed;
     margin-left: 49.5%;
     grid-column: 2;
     background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 1800px) {
+    #restartButton {
+    left: 670px;
+    }
+
+    #pauseButton {
+    left: 750px;
+    }
+
+    .particle-block input[type="text"] {
+        width: 28px !important;
+    }
+
+    .particle-block input[type="range"] {
+        width: 75px !important;
+    }
+
+    .particle-block input[type="color"] {
+        width: 100px !important;
+    }
+}
+
+@media (max-width: 1600px) {
+    #restartButton {
+        left: 570px;
+    }
+
+    #pauseButton {
+        left: 650px;
+    }
+
+    .secondary-parameters {
+        grid-template-columns: 1fr 1fr !important;
+        row-gap: 16px;
+    }
+
+    .particle-block input[type="text"] {
+        width: 32px !important;
+    }
+
+    .particle-block input[type="range"] {
+        width: 120px !important;
+    }
+
+    .particle-block input[type="color"] {
+        width: 140px !important;
+    }
+
+    .parameter-grid input[type="text"] {
+        width: 40px !important;
+        height: 20px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .parameter-grid input[type="range"] {
+        width: 50px !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    #restartButton {
+        left: 450px;
+    }
+
+    #pauseButton {
+        left: 530px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #restartButton {
+        left: 370px;
+    }
+
+    #pauseButton {
+        left: 450px;
+    }
+
+    .particle-block input[type="range"] {
+        width: 100px !important;
+    }
+
+    .parameter-grid input[type="text"] {
+        width: 20px !important;
+        height: 20px !important;
+        margin-bottom: 2px !important;
+        font-size: 8px;
+    }
+
+    .parameter-grid input[type="range"] {
+        width: 30px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    #restartButton {
+        left: 300px;
+    }
+
+    #pauseButton {
+        left: 375px;
+    }
+
+    .particle-block input[type="range"] {
+        width: 60px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    #restartButton {
+        left: 220px;
+    }
+
+    #pauseButton {
+        left: 300px;
+    }
+
+    .secondary-parameters {
+        grid-template-columns: 1fr !important;
+        row-gap: 16px;
+    }
+
+    .particle-block input[type="text"] {
+        width: 32px !important;
+    }
+
+    .particle-block input[type="range"] {
+        width: 200px !important;
+    }
+
+    .particle-block input[type="color"] {
+        width: 220px !important;
+    }
+
+    .parameter-grid input[type="text"] {
+        width: 10px !important;
+        height: 21px !important;
+        margin-bottom: 0 !important;
+        font-size: 8px;
+    }
+
+    .parameter-grid input[type="range"] {
+        display: none;
+    }
+
+    .parameter-grid {
+        gap: 2px;
+    }
 }
