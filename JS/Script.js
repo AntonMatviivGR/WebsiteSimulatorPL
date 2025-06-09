@@ -1,12 +1,3 @@
-document.addEventListener('wheel', (e) => {
-  if (e.ctrlKey) {
-    e.preventDefault();
-  }
-}, { passive: false });
-
-document.addEventListener('gesturestart', (e) => e.preventDefault());
-document.addEventListener('dblclick', (e) => e.preventDefault());
-
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 let isPaused = false;
