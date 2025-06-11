@@ -5,11 +5,17 @@
     const input   = document.querySelector('.password-input');
     const btn     = document.getElementById('PassBtn');
 
-    function tryUnlock() {
-      if (input.value === CORRECT_PASSWORD) {
-        block.style.display = 'none';
-      }
+  function tryUnlock() {
+    if (input.value === CORRECT_PASSWORD) {
+      block.style.display = 'none';
+      setTimeout(() => {
+        if (typeof initializeParticles === 'function') {
+          initializeParticles();
+          restartAnimation();
+        }
+      }, 0);
     }
+  }
 
     btn.addEventListener('click', tryUnlock);
     input.addEventListener('keydown', e => {
