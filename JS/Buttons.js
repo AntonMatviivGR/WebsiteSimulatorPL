@@ -43,19 +43,14 @@ document.getElementById('langButton').addEventListener('click', function () {
 });
 
 function toggleRestart() {
-  if (isPaused) {
-    restartAnimation();
-    toggleButtonState();
-  }
+  if (!isPaused) return;
+  restartAnimation();
+  toggleButtonState();
 }
 
 restartButton.addEventListener('click', toggleRestart);
 
 function restartAnimation() {
-  if (!isPaused) {
-    return;
-  }
-
   Particles.forEach(type => {
     particles[type] = [];
   });
@@ -75,38 +70,36 @@ function restartAnimation() {
     drawParticles(particles[type]);
   });
 
-  if (!isPaused) {
-    animate();
-  }
+  isPaused = false;
 }
 
-document.addEventListener('keydown', (e) => {
-  if (['R', 'r', 'К', 'к'].includes(e.key)) {
-    restartAnimation();
+document.addEventListener('keydown', e => {
+  if (['R','r','К','к'].includes(e.key)) {
+    toggleRestart();
   }
 });
 
 function toggleButtonState() {
-    if (isPaused) {
-        pauseButton.classList.add('paused');
-        restartButton.classList.add('available');
-        restartButton.classList.remove('unable');
-    } else {
-        pauseButton.classList.remove('paused');
-        restartButton.classList.remove('available');
-        restartButton.classList.add('unable');
-    }
+  if (isPaused) {
+    pauseButton.classList.add('paused');
+    restartButton.classList.add('available');
+    restartButton.classList.remove('unable');
+  } else {
+    pauseButton.classList.remove('paused');
+    restartButton.classList.remove('available');
+    restartButton.classList.add('unable');
+  }
 }
 
 function togglePause() {
-    isPaused = !isPaused;
-    toggleButtonState(pauseButton, isPaused);
+  isPaused = !isPaused;
+  toggleButtonState();
 }
 
 pauseButton.addEventListener('click', togglePause);
 
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'P' || e.key === 'p' || e.key === 'З' || e.key === 'з') {
-        togglePause();
-    }
+document.addEventListener('keydown', e => {
+  if (['P','p','З','з'].includes(e.key)) {
+    togglePause();
+  }
 });
