@@ -177,6 +177,12 @@ function applyParamsAndRestart(params) {
 
   loadAllSlots();
 
+  if (TEMPLATES.length > 0) {
+    const randIndex = Math.floor(Math.random() * TEMPLATES.length);
+    const randomTemplate = TEMPLATES[randIndex];
+    applyParamsAndRestart(randomTemplate.params);
+  }
+
   const searchInput = document.querySelector('.search');
   searchInput.addEventListener('input', () => {
     const q = searchInput.value.trim().toLowerCase();
