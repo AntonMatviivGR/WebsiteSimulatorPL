@@ -180,6 +180,17 @@ input[type="text"] {
 }
 
 @media (max-width: 1000px) {
+
+    #saveButton {
+        font-size: 10px;
+    }
+
+    #langButton {
+        width: 60px;
+        left: 150px;
+        font-size: 10px;
+    }
+
     #restartButton {
         left: 300px;
     }
@@ -194,6 +205,7 @@ input[type="text"] {
 }
 
 @media (max-width: 800px) {
+
     #restartButton {
         left: 220px;
     }
@@ -205,6 +217,10 @@ input[type="text"] {
     .secondary-parameters {
         grid-template-columns: 1fr !important;
         row-gap: 16px;
+    }
+
+    .main-parameters h2 {
+        font-size: 20px;
     }
 
     .particle-block input[type="text"] {
